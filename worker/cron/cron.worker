@@ -1,0 +1,9 @@
+runtime "node"
+stack "node-0.10"
+exec "cron.js"
+
+file "package.json"
+
+build "npm install"
+
+remote

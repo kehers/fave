@@ -1,0 +1,15 @@
+{
+  "name": "cron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cron.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Opeyemi Obembe <kehers@gmail.com> (http://obem.be/opeyemi)",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^2.1.6",
+    "request": "^2.69.0"
+  }
+}

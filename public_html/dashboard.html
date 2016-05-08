@@ -1,0 +1,15 @@
+{{> header}}
+
+<section>
+  <h3>All geared up!</h3>
+  {{#error}}<h6 class="alert error">{{error}}</h6>{{/error}}
+  {{#info}}<h6 class="alert info">{{info}}</h6>{{/info}}
+  <h6><span class="fade">Twitter account</span>: {{user_user}}</h6>
+  <h6><span class="fade">Pocket</span>: {{user_pocket}}</h6>
+  <h6><span class="fade">Pushed links</span>: {{user_hits}}</h6>
+  <h6><span class="fade">Up since</span>: {{user_date}}</h6>
+  <p>&nbsp;</p>
+  {{#user_paused}}<a class="button button-primary" href="?go">Getting favs paused. Start?{{/user_paused}}{{^user_paused}}<a class="button" href="?pause" onclick="confirm('Tweets you fav will no longer be pushed to your Pocket account. Continue?')">Pause{{/user_paused}}</a> <form method="post" action="delete" style="display:inline-block"><button class="button button-secondary">Delete Account</button>
+</section>
+
+{{> footer}}
